@@ -43,7 +43,7 @@
 		      <html:reset value="ƒŠƒZƒbƒg" />
 		    </html:form>
 		    
-		    sh0003<BR>
+		    
 		    sh0004<BR>
 		    sh0005<BR>
 		  </div>
