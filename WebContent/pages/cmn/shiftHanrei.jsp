@@ -52,7 +52,11 @@
       <div id="gymBody">
         <html:form>
           <%-- 凡例 --%>
-          <div id="hanrei" style="width:470px; margin-left:15px; float:left">
+          <%-- "margin-left:auto; margin-right: auto"を追記。"; float:left"を消去。
+          		縦スクロールバーが右側に表示される事象は未解消。
+          		2024/02/21 中川
+           --%>
+          <div id="hanrei" style="width:470px; margin-left:auto; margin-right: auto">
             <div>
               <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                 <tr>
