@@ -15,11 +15,11 @@ import java.util.List;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import constant.DbConstant.M_shain;
-import constant.DbConstant.M_shift;
 import business.db.dao.AbstractDao;
 import business.dto.day.HibetsuShiftDto;
 import business.logic.utils.CommonUtils;
+import constant.DbConstant.M_shain;
+import constant.DbConstant.M_shift;
 
 /**
  * 説明：日別シフトDao
@@ -57,7 +57,8 @@ public class HibetsuShiftDao extends AbstractDao {
             strSql.append("    SHIFT.END_TIME, ");
             strSql.append("    SHIFT.BREAK_TIME ");
             strSql.append("FROM ");
-            strSql.append("    M_SHAIN MSHAIN INNER JOIN  ");
+            //↓外部結合に修正 2024/02/22 中川
+            strSql.append("    M_SHAIN MSHAIN left outer JOIN  ");
             strSql.append("    (SELECT ");
             strSql.append("        TSHIFT.SHAIN_ID, ");
             strSql.append("        MSHIFT.START_TIME, ");
