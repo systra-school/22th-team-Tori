@@ -23,7 +23,7 @@
     int bodyRightDivHeight = 0;
     int bodyLeftDivHeight = 0;
     // É{ÉfÉBÉeÅ[ÉuÉãÇÃ td ÇÃïù
-    int tdWidth = 150;
+    int tdWidth = 175; //150Å®175Ç…ïœçX 2024/02/23 íÜêÏ
     // É{ÉfÉBÉeÅ[ÉuÉãÇÃ tr ÇÃèc
     int trHeight = 50;
     // ècÉXÉNÉçÅ[ÉãÉoÅ[ÇÃïù
@@ -33,7 +33,7 @@
         bodyRightDivHeight = 402;
         bodyLeftDivHeight = 402;
     } else {
-        bodyRightDivWidth = 918;
+        bodyRightDivWidth = 1080; //918 Å® 1080Ç…ïœçX 2024/02/23 íÜêÏ
         bodyRightDivHeight = 418;
         bodyLeftDivHeight = 402;
     }
@@ -100,8 +100,8 @@
             </div>
             <table border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="154px" >
-                  <div id="headLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 154px;">
+                <td width="175px" ><%--154Å®175 --%>
+                  <div id="headLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 175px;">
                     <table border="1" cellpadding="0" cellspacing="0" class="tblHeader">
                       <tr>
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
@@ -129,126 +129,128 @@
             <table border="0" cellpadding="0" cellspacing="0">
               <tr height="100%">
                 <td valign="top">
-                  <div id="bodyLeftTbl" style="overflow-x: auto;overflow-y: hidden;width: 154px;height:<%=bodyLeftDivHeight %>px; ">
+                  <%-- style="overflow-x: auto; Å® hidden; Ç…èCê≥ 2024/02/23 íÜêÏ--%>
+                  <div id="bodyLeftTbl" style="overflow-x: hidden;overflow-y: hidden;width: 175px;height:<%=bodyLeftDivHeight %>px; ">
                     <table border="1" cellpadding="0" cellspacing="0" class="tblBody">
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇOÅFÇOÇO&#xFF5E;ÇOÇPÅFÇOÇO
+                        <%-- ÅFÅ®îºäpÇ…ïœçX--%>
+                        ÇOÇO:ÇOÇO&#xFF5E;ÇOÇP:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇPÅFÇOÇO&#xFF5E;ÇOÇQÅFÇOÇO
+                        ÇOÇP:ÇOÇO&#xFF5E;ÇOÇQ:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇQÅFÇOÇO&#xFF5E;ÇOÇRÅFÇOÇO
+                        ÇOÇQ:ÇOÇO&#xFF5E;ÇOÇR:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇRÅFÇOÇO&#xFF5E;ÇO<%=tdWidth %>ÇO
+                        ÇOÇR:ÇOÇO&#xFF5E;ÇOÇS:ÇOÇO <%-- ÇOÇSÅFÇOÇOÇ…èCê≥ 2024/02/23 íÜêÏ --%>
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇSÅFÇOÇO&#xFF5E;ÇOÇTÅFÇOÇO
+                        ÇOÇS:ÇOÇO&#xFF5E;ÇOÇT:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇTÅFÇOÇO&#xFF5E;ÇOÇUÅFÇOÇO
+                        ÇOÇT:ÇOÇO&#xFF5E;ÇOÇU:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇUÅFÇOÇO&#xFF5E;ÇOÇVÅFÇOÇO
+                        ÇOÇU:ÇOÇO&#xFF5E;ÇOÇV:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇVÅFÇOÇO&#xFF5E;ÇOÇWÅFÇOÇO
+                        ÇOÇV:ÇOÇO&#xFF5E;ÇOÇW:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇWÅFÇOÇO&#xFF5E;ÇOÇXÅFÇOÇO
+                        ÇOÇW:ÇOÇO&#xFF5E;ÇOÇX:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇOÇXÅFÇOÇO&#xFF5E;ÇPÇOÅFÇOÇO
+                        ÇOÇX:ÇOÇO&#xFF5E;ÇPÇO:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇOÅFÇOÇO&#xFF5E;ÇPÇPÅFÇOÇO
+                        ÇPÇO:ÇOÇO&#xFF5E;ÇPÇP:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇPÅFÇOÇO&#xFF5E;ÇPÇQÅFÇOÇO
+                        ÇPÇP:ÇOÇO&#xFF5E;ÇPÇQ:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇQÅFÇOÇO&#xFF5E;ÇPÇRÅFÇOÇO
+                        ÇPÇQ:ÇOÇO&#xFF5E;ÇPÇR:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇRÅFÇOÇO&#xFF5E;ÇPÇSÅFÇOÇO
+                        ÇPÇR:ÇOÇO&#xFF5E;ÇPÇS:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇSÅFÇOÇO&#xFF5E;ÇPÇTÅFÇOÇO
+                        ÇPÇS:ÇOÇO&#xFF5E;ÇPÇT:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇTÅFÇOÇO&#xFF5E;ÇPÇUÅFÇOÇO
+                        ÇPÇT:ÇOÇO&#xFF5E;ÇPÇU:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇUÅFÇOÇO&#xFF5E;ÇPÇVÅFÇOÇO
+                        ÇPÇU:ÇOÇO&#xFF5E;ÇPÇV:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇVÅFÇOÇO&#xFF5E;ÇPÇWÅFÇOÇO
+                        ÇPÇV:ÇOÇO&#xFF5E;ÇPÇW:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇWÅFÇOÇO&#xFF5E;ÇPÇXÅFÇOÇO
+                        ÇPÇW:ÇOÇO&#xFF5E;ÇPÇX:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇPÇXÅFÇOÇO&#xFF5E;ÇQÇOÅFÇOÇO
+                        ÇPÇX:ÇOÇO&#xFF5E;ÇQÇO:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇQÇOÅFÇOÇO&#xFF5E;ÇQÇPÅFÇOÇO
+                        ÇQÇO:ÇOÇO&#xFF5E;ÇQÇP:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇQÇPÅFÇOÇO&#xFF5E;ÇQÇQÅFÇOÇO
+                        ÇQÇP:ÇOÇO&#xFF5E;ÇQÇQ:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇQÇQÅFÇOÇO&#xFF5E;ÇQÇRÅFÇOÇO
+                        ÇQÇQ:ÇOÇO&#xFF5E;ÇQÇR:ÇOÇO
                         </td>
                       </tr>
                       <tr height="<%=trHeight %>px">
                         <td width="<%=tdWidth %>px" nowrap="nowrap" align="center">
-                        ÇQÇRÅFÇOÇO&#xFF5E;ÇQÇSÅFÇOÇO
+                        ÇQÇR:ÇOÇO&#xFF5E;ÇQÇS:ÇOÇO
                         </td>
                       </tr>
                     </table>
