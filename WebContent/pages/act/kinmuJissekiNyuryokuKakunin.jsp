@@ -66,7 +66,7 @@
       <div id="gymBody">
         <html:form action="/shainMstMntRegist" >
           <div style="float: left; width: 100%;">
-            <div style="float: left; width: 804px; text-align: left; margin-left:100px;">
+            <div style="float: left; width: 844px; text-align: left; margin-left:100px;">
               表示年月：
               <html:select name="kinmuJissekiNyuryokuKakuninForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="kinmuJissekiNyuryokuKakuninForm"
@@ -81,16 +81,16 @@
             </div>
           </div>
           <div>
-            <div style="overflow: hidden; width: 1080px; margin-left:80px;">
+          <div style="width: 1088px; margin-left:100px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="80px" align="center">
+                <td width="50px" align="center">
                   日付
                 </td>
-                <td width="50px" align="center">
+                <td width="30px" align="center">
                   曜
                 </td>
-                <td width="100px" align="center">
+                <td width="50px" align="center">
                   シフト
                 </td>
                 <td width="100px" align="center">
@@ -111,18 +111,18 @@
                 <td width="100px" align="center">
                   休日
                 </td>
-                <td width="220px" align="center">
+                <td width="320px" align="center">
                   備考
                 </td>
               </tr>
             </table>
           </div>
-            <div style="overflow: auto; height: 400px; width: 1088px; margin-left:80px; ">
+            <div style="overflow: auto; height: 400px; width: 1088px; margin-left:100px; ">
             <logic:iterate id="kinmuJissekiNyuryokuKakuninList" name="kinmuJissekiNyuryokuKakuninForm" property="kinmuJissekiNyuryokuKakuninList" indexId="idx">
               <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
                 <tr>
                   <html:hidden name="kinmuJissekiNyuryokuKakuninList" property="shainId" />
-                  <td width="80px" align="center">
+                  <td width="50px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kadouDayDisp" /><br>
                   </td>
                   <bean:define id="youbi" name="kinmuJissekiNyuryokuKakuninList" property="youbi"/>
@@ -137,20 +137,20 @@
                   }
                   %>
 
-                  <td width="50px" align="center" class="<%=color %>">
+                  <td width="30px" align="center" class="<%=color %>">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="youbi" /><br>
                   </td>
-                  <td width="100px" align="center">
+                  <td width="50px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="symbol" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="10" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="jitsudouTime" /><br>
@@ -161,8 +161,8 @@
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kyuujitsuTime" /><br>
                   </td>
-                  <td width="220px" align="left">
-                    <html:text style="text-align:left" size="40" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
+                  <td width="320px" align="left">
+                    <html:text style="text-align:left" size="39" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
                   </td>
                 </tr>
               </table>

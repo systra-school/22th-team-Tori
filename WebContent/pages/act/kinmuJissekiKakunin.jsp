@@ -1,5 +1,5 @@
 <!-- kinmuJissekiKakunin.jsp -->
-<%@page import="constant.CommonConstant.DayOfWeek"%>
+<%@ page import="constant.CommonConstant.DayOfWeek"%>
 <%
 /**
  * ファイル名：kinmuJissekiNyuryokuKakunin.jsp
@@ -8,12 +8,12 @@
  * 1.0  2010/09/13 Kazuya.Naraki
  */
 %>
-<%@page contentType="text/html; charset=Shift_JIS" pageEncoding="Shift_JIS"%>
+<%@ page contentType="text/html; charset=Shift_JIS" pageEncoding="Shift_JIS"%>
 <%@ page import="constant.RequestSessionNameConstant"%>
 <%@ page import="constant.CommonConstant"%>
-<%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
-<%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
-<%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
+<%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
+<%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
+<%@ taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <%
 String color = "";
 %>
