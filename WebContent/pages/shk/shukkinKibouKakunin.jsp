@@ -22,7 +22,7 @@
 <bean:size id="dateBeanListSize" name="shukkinKibouKakuninForm"  property="dateBeanList"/>
 <bean:define id="offset" name="shukkinKibouKakuninForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
-<bean:define id="showLength" value="18" type="java.lang.String"/>
+<bean:define id="showLength" value="16" type="java.lang.String"/>
 <html>
   <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -83,17 +83,17 @@
             <bean:write name="shukkinKibouKakuninForm" property="cntPage"/>/
             <bean:write name="shukkinKibouKakuninForm" property="maxPage"/>
             <div>
-              <table width="1100px" cellpadding="0" cellspacing="0">
+              <table width="1200px" cellpadding="0" cellspacing="0" ><!-- 2/26 widthを1100→1200へ変更 木島 -->
                 <tr>
                   <td width="150px" valign="top">
                     <table border="1" cellpadding="0" cellspacing="0">
                       <tr class="tblHeader">
-                        <td width="150px" align="center">
+                        <td  width="300px" align="center"><!--2/26 150px→300pxへ変更 木島 -->
                           &nbsp;
                         </td>
                       </tr>
                       <tr class="tblHeader">
-                        <td width="150px" align="center">
+                        <td width="300px" align="center"><!--2/26 150px→300pxへ変更 木島 -->
                         社員名
                         </td>
                       </tr>
@@ -106,7 +106,7 @@
                       </logic:iterate>
                     </table>
                   </td>
-                  <td>
+                  <td valign="top"><!--2/26  valign="top"追加 木島 -->
                     <div style="overflow-x: auto;overflow-y: hidden; width:1067px;height: 100%; text-align:center;">
                       <table border="1" cellpadding="0" cellspacing="0">
                         <tr class="tblHeader">
@@ -342,16 +342,13 @@
               </table>
             </div>
           </html:form>
-          <div style="margin-left:50px;">
-            <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
-          </div>
         </div>
       </div>
       <div id="footer">
         <table>
           <tr>
             <td id="footLeft">
-              　
+               <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" /><!-- 凡例表示のinputタグ位置変更 2/26木島 -->
             </td>
             <td id="footCenter">
               　
