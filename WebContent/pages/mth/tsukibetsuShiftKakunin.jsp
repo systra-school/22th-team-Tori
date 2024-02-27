@@ -21,7 +21,7 @@
 
 <bean:size id="dateBeanListSize" name="tsukibetsuShiftKakuninForm" property="dateBeanList"/>
 <bean:size id="listSize" name="tsukibetsuShiftKakuninForm" property="tsukibetsuShiftKakuninBeanList"/>
-<bean:define id="showLength" value="16" type="java.lang.String"/>
+<bean:define id="showLength" value="15" type="java.lang.String"/>
 <bean:define id="offset" name="tsukibetsuShiftKakuninForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="cntPage" name="tsukibetsuShiftKakuninForm" property="cntPage" type="java.lang.Integer"/>
@@ -136,8 +136,8 @@ if (listSize > intShowLength) {
                     </logic:iterate>
                   </table>
                 </td>
-                <td>
-                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: <%=heightSize * (listSize + 2) + 18 %>px; text-align:center;">
+                <td valign="top">
+                  <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: text-align:center;"><!-- 2/26スクリプトレットで記述された heightSize * (listSize + 2) + 18 px;を削除　木島 -->
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
                         <td width="40px" align="center">
@@ -365,11 +365,11 @@ if (listSize > intShowLength) {
                 </td>
               </tr>
             </table>
+            <div style="margin-top:5px;"><!--凡例表示のdivタグをtableすぐ下へ移動 margin-left:50px;→margin-top;5px;へ変更-->
+              <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
+            </div>
           </div>
         </html:form>
-        <div style="margin-left:50px;">
-          <input value="凡例表示" type="button" class="lngButton"  onclick="openWindow()" />
-        </div>
       </div>
       <div id="footer">
         <table>
