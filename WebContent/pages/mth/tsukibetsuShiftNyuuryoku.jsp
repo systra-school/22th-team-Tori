@@ -21,14 +21,14 @@
 
 <bean:size id="dateBeanListSize" name="tsukibetsuShiftNyuuryokuForm" property="dateBeanList"/>
 <bean:size id="listSize" name="tsukibetsuShiftNyuuryokuForm" property="tsukibetsuShiftNyuuryokuBeanList"/>
-<bean:define id="showLength" value="16" type="java.lang.String"/>
+<bean:define id="showLength" value="13" type="java.lang.String"/><!-- value‚ð14‚Ö•ÏX@2/27–Ø“‡ -->
 <bean:define id="offset" name="tsukibetsuShiftNyuuryokuForm" property="offset" />
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="cntPage" name="tsukibetsuShiftNyuuryokuForm" property="cntPage" type="java.lang.Integer"/>
 <bean:define id="maxPage" name="tsukibetsuShiftNyuuryokuForm" property="maxPage" type="java.lang.Integer"/>
 
 <%
-final int heightSize = 22;
+final int heightSize = 27;
 
 int intShowLength = Integer.parseInt(showLength);
 
@@ -42,6 +42,7 @@ if (listSize > intShowLength) {
 }
 
 %>
+<!-- heightSize‚ð27‚Ö•ÏX 2/27–Ø“‡-->
 <html>
   <head>
     <meta http-equiv="Pragma" content="no-cache">
@@ -106,7 +107,7 @@ if (listSize > intShowLength) {
         </table>
       </div>
       <div id="gymBody" style="overflow: hidden;">
-        <html:form action="/shukkinKibouNyuuryokuInit" >
+        <html:form action="/tsukibetsuShiftNyuuryokuInit" >
           <div style="margin-left:50px;">
             <div style="height: 25px;">
               •\Ž¦”NŒŽF
@@ -122,7 +123,7 @@ if (listSize > intShowLength) {
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="cntPage"/>/
               <bean:write name="tsukibetsuShiftNyuuryokuForm" property="maxPage"/>
             </div>
-            <table width="1100px" cellpadding="0" cellspacing="0">
+            <table width="1300px" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" valign="top">
                   <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
@@ -145,7 +146,7 @@ if (listSize > intShowLength) {
                     </logic:iterate>
                   </table>
                 </td>
-                <td>
+                <td valign="top"><!-- valign="top"’Ç‰Á@2/27@–Ø“‡  -->
                   <div style="overflow-x: auto;overflow-y: hidden; width:985px;height: <%=heightSize * (listSize + 2) + 18 %>px; text-align:center;">
                     <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                       <tr height="<%=heightSize %>px">
@@ -537,25 +538,24 @@ if (listSize > intShowLength) {
             </table>
           </div>
         </html:form>
-        <div style="margin-left:50px;">
-          <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
-          <input value="Šî–{ƒVƒtƒg”½‰f" type="button" class="lngButton"  />
-          <input value="o‹ÎŠó–]“ú”½‰f" type="button" class="lngButton"  onclick="submitShukkinKibou()" />
-        </div>
       </div>
-      <div id="footer">
+      <div id="footer" style="margin-top:-50px;">
         <table>
           <tr>
-            <td id="footLeft">
+            <td style="float: left;">
+            	 <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
             </td>
-            <td id="footCenter" style="text-align: right;">
-
+            <td style="float: left;">
+            	 <input value="Šî–{ƒVƒtƒg”½‰f" type="button" class="lngButton"  />
             </td>
-            <td id="footRight">
-              <input value="“o˜^" type="button" class="smlButton"  onclick="submitRegist()" />
+            <td style="float: left;">
+                 <input value="o‹ÎŠó–]“ú”É‰h" type="button" class="lngButton"  />
             </td>
           </tr>
         </table>
+          <div style="text-align: right; margin-right:100px; margin-bottom:50px;" >
+          	<input value="“o˜^" type="button" class="smlButton"  onclick="submitRegist()" />
+          </div>
       </div>
     </div>
   </body>

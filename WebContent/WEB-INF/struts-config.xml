@@ -197,7 +197,14 @@
         scope="session">
         <forward name="success" path="/menu.do"/>
       </action>
-
+	  <!-- 出勤希望日入力初期表示　2/27木島 -->
+      <action
+        path="/shukkinKibouNyuryokuInit"
+        type="action.shk.ShukkinKibouNyuryokuInitAction"
+        name="shukkinKibouKakuninForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuryoku.jsp"/>
+      </action>
       <!-- 出勤希望日確認初期表示 -->
       <action
         path="/shukkinKibouKakuninInit"
