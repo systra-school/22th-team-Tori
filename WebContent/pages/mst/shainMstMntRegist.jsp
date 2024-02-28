@@ -102,7 +102,11 @@
       </div>
       <div id="gymBody">
         <html:form action="/shainMstMntRegist" >
-          <div style="width: 650px;text-align: left; margin-left:300px;">
+           <%-- "margin-left:300px" → "margin-left:auto; margin-right: auto"に修正。(明細行も)
+           	    明細行の項目幅の調整でwidthを1調整。
+          		2024/02/28 中川
+           --%>
+          <div style="width: 650px;text-align: left; margin-left:auto; margin-right: auto;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="150px" align="center">
@@ -120,19 +124,19 @@
               </tr>
             </table>
           </div>
-          <div style="overflow: auto; height: 440px; width: 650px; margin-left:300px; ">
+          <div style="overflow: auto; height: 440px; width: 650px; margin-left:auto; margin-right: auto; ">
             <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="150px"  align="center">
+                <td width="151px"  align="center">
                   <html:text property="password"  value="" size="10" />
                 </td>
-                <td width="200px"  align="center">
+                <td width="199px"  align="center">
                   <html:text property="shainName" value="" size="20" />
                 </td>
-                <td width="200px"  align="center">
+                <td width="199px"  align="center">
                   <html:text property="shainNameKana" value="" size="20" />
                 </td>
-                <td width="100px" align="center">
+                <td width="101px" align="center">
                   <html:select property="kengenId" value="01">
                     <html:optionsCollection name="shainMstMntForm"
                                             property="kengenCmbMap"
