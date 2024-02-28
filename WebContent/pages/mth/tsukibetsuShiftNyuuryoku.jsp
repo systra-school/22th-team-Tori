@@ -549,7 +549,7 @@ if (listSize > intShowLength) {
             	 <input value="Šî–{ƒVƒtƒg”½‰f" type="button" class="lngButton"  />
             </td>
             <td style="float: left;">
-                 <input value="o‹ÎŠó–]“ú”É‰h" type="button" class="lngButton"  />
+                 <input value="o‹ÎŠó–]“ú”½‰f" type="button" class="lngButton"  />
             </td>
           </tr>
         </table>
