@@ -171,7 +171,7 @@
                 <td width="110px" align="center">
                   シフト名
                 </td>
-                <td width="76px" align="center">
+                <td width="75px" align="center">
                   シンボル
                 </td>
                 <td width="230px" align="center">
