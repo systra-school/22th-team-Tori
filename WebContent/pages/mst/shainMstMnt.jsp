@@ -139,13 +139,15 @@
       </div>
       <div id="gymBody">
         <html:form action="/shainMstMntUpdate">
-          <div style="overflow:hidden; margin-left:100px">
+        
+        <!--障害表012　2024/02/29　古川　修正-->
+          <div style="overflow-x: auto;overflow-y: hidden; width: 1088px;margin-left:100px">
             <table class="tblHeader" border="1"   cellpadding="0" cellspacing="0">
               <tr>
                 <td width="200px" align="center">
                   社員ＩＤ
                 </td>
-                <td width="200px" align="center">
+                <td width="199px" align="center">
                   パスワード
                 </td>
                 <td width="200px" align="center">
