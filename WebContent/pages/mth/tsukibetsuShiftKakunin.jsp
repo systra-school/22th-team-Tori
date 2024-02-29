@@ -96,7 +96,8 @@ if (listSize > intShowLength) {
           </tr>
         </table>
       </div>
-      <div id="gymBody" style="overflow: hidden;">
+      <!--áŠQ•\033@2024/02/29@ŒÃì@C³-->
+      <div id="gymBody" style="overflow-x: auto;overflow-y: hidden;">             
         <html:form action="/shukkinKibouKakuninInit" >
           <div style="margin-left:50px;">
             <div style="height: 25px;">
