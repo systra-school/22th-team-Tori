@@ -66,7 +66,7 @@
     * サブウィンドウで検索
     */
     function openSearch() {
-    	window.open("/kikin/shukkinKibouNyuuryokuSearch.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+    	window.open("/kikin/shukkinKibouKakuninSearch.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
     }
     -->
     </script>

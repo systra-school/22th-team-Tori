@@ -210,9 +210,9 @@
       <action
         path="/shukkinKibouNyuuryokuSearch"
         type="action.shk.ShukkinKibouNyuuryokuSearchAction"
-        name="shukkinKibouKakuninForm"
+        name="shukkinKibouNyuuryokuForm"
         scope="session">
-        <forward name="success" path="/pages/shk/shukkinKibouKakunin.jsp"/>
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
       </action>
       <!-- 出勤希望入力(改ページ) 追加 2/28白石 -->
       <action
