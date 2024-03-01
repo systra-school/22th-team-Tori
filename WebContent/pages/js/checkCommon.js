@@ -13,7 +13,8 @@
  */
 function checkHankakuKana(str) {
 
-    if (str.match(/^[±-İ]*$/)) {
+	// áŠQ049‘Î‰ [±-İ] ¨ [¦-ß] 2024/03/01 ’†ì
+    if (str.match(/^[¦-ß]*$/)) {
         return true;
     }
 
