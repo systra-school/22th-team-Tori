@@ -198,12 +198,66 @@
         <forward name="success" path="/menu.do"/>
       </action>
 	  <!-- 出勤希望日入力初期表示　2/27木島 -->
+	  <!-- 出勤希望日入力初期表示 修正 2/28白石 -->
       <action
-        path="/shukkinKibouNyuryokuInit"
-        type="action.shk.ShukkinKibouNyuryokuInitAction"
+        path="/shukkinKibouNyuuryokuInit"
+        type="action.shk.ShukkinKibouNyuuryokuInitAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+      <!-- 出勤希望入力 追加 2/28白石 -->
+      <action
+        path="/shukkinKibouNyuuryokuSearch"
+        type="action.shk.ShukkinKibouNyuuryokuSearchAction"
         name="shukkinKibouKakuninForm"
         scope="session">
-        <forward name="success" path="/pages/shk/shukkinKibouNyuryoku.jsp"/>
+        <forward name="success" path="/pages/shk/shukkinKibouKakunin.jsp"/>
+      </action>
+      <!-- 出勤希望入力(改ページ) 追加 2/28白石 -->
+      <action
+        path="/shukkinKibouNyuuryokuPage"
+        type="action.shk.ShukkinKibouNyuuryokuPageAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+      <!-- 出勤希望入力登録 追加 2/28白石 -->
+      <action
+        path="/shukkinKibouNyuuryokuRegist"
+        type="action.shk.ShukkinKibouNyuuryokuRegistAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryoku.jsp"/>
+      </action>
+      <!-- 出勤希望入力戻る 追加 2/28白石 -->
+      <action
+        path="/shukkinKibouNyuuryokuBack"
+        type="action.shk.ShukkinKibouNyuuryokuBackAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/cmn/menu.jsp"/>
+      </action>
+      <action
+        path="/shukkinKibouNyuuryokuSubInit"
+        type="action.shk.ShukkinKibouNyuuryokuInitAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryokuSub.jsp"/>
+      </action>
+      <action
+        path="/shukkinKibouNyuuryokuSubSearch"
+        type="action.shk.ShukkinKibouNyuuryokuSearchAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryokuSub.jsp"/>
+      </action>
+      <action
+        path="/shukkinKibouNyuuryokuSubPage"
+        type="action.shk.ShukkinKibouNyuuryokuPageAction"
+        name="shukkinKibouNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/shk/shukkinKibouNyuuryokuSub.jsp"/>
       </action>
       <!-- 出勤希望日確認初期表示 -->
       <action

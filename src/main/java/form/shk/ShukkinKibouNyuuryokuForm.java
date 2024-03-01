@@ -31,6 +31,11 @@ public class ShukkinKibouNyuuryokuForm extends ActionForm {
     /** 年月コンボ */
     private Map<String, String> yearMonthCmbMap;
 
+    /** ページング用 */
+    private String paging;
+    /** オフセット */
+    private int offset;
+
     /**
      * @return yearMonth
      */
@@ -92,5 +97,28 @@ public class ShukkinKibouNyuuryokuForm extends ActionForm {
     public void setYearMonthCmbMap(Map<String, String> yearMonthCmbMap) {
         this.yearMonthCmbMap = yearMonthCmbMap;
     }
-
+    /**
+     * @return paging
+     */
+    public String getPaging() {
+        return paging;
+    }
+    /**
+     * @param paging をセットする
+     */
+    public void setPaging(String paging) {
+        this.paging = paging;
+    }
+    /**
+     * @return offset
+     */
+    public int getOffset() {
+        return offset;
+    }
+    /**
+     * @param offset をセットする
+     */
+    public void setOffset(int offset) {
+        this.offset = offset;
+    }
 }

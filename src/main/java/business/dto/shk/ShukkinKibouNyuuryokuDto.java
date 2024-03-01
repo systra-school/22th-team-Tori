@@ -14,6 +14,8 @@ package business.dto.shk;
 public class ShukkinKibouNyuuryokuDto {
     /** 社員ID */
     private String shainId;
+    /** 社員名 */
+    private String shainName;
     /** 年月日 */
     private String yearMonthDay;
     /** 希望シフト */
@@ -34,6 +36,18 @@ public class ShukkinKibouNyuuryokuDto {
         this.shainId = shainId;
     }
     /**
+     * @return shainName
+     */
+	public String getShainName() {
+		return shainName;
+	}
+	/**
+	 * @param shainName
+	 */
+	public void setShainName(String shainName) {
+		this.shainName = shainName;
+	}
+	/**
      * @return yearMonthDay
      */
     public String getYearMonthDay() {
