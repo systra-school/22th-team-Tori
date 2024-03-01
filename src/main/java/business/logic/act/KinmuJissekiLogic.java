@@ -206,46 +206,47 @@ public class KinmuJissekiLogic {
             
             //障害表014対応 2024/03/01 白石
             
-            /*
-             * 計算処理を行うために各時間を
-             * 秒に変換する。
-             */
-            long startTimeShiftLong = CommonUtils.getSecond(startTimeShift);
-            long endTimeShiftLong = CommonUtils.getSecond(endTimeShift);
-            long breakTimeShiftLong = CommonUtils.getSecond(breakTimeShift);
-            
-            // 実労働時間(終了時間 - 開始時間)
-            long jitsudouShiftTimeS = (endTimeLong - startTimeLong - breakTimeLong); // 秒
-            
-            if (jitsudouShiftTimeS < 0) {
-                // 休憩が多かったとき
-            	jitsudouShiftTimeS = 0;
-            }
-            //時間外労働時間(実労働時間 - ())
-            long jikangaiTimeS = jitsudouShiftTimeS - (endTimeShiftLong - startTimeShiftLong - breakTimeShiftLong);
-            
-            if (jitsudouShiftTimeS < 0) {
-            	// 時間外労働が無かった時
-            	jikangaiTimeS = 0;
-            }
-            
-            // 秒を60で除算する → 分に変換。
-            long jikangaiTimeM = jikangaiTimeS / 60; // 分
-            // 分を60で除算する → 時に変換。
-            long jikangaiTimeH = jikangaiTimeM / 60; // 時
-            // 分を60で除算したときの余り → 分を算出する。
-            jikangaiTimeM = jikangaiTimeM % 60; // 余りが分になる
-            
-            StringBuffer jikangaiTime = new StringBuffer();
-            jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeH), 2));
-            jikangaiTime.append(colon);
-            jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeM), 2));
-            
             if (CheckUtils.isEmpty(startTimeShift) || CheckUtils.isEmpty(endTimeShift) || CheckUtils.isEmpty(breakTimeShift)) {
                 // シフトがない（休日の場合）
                 // 実働時間を勤務実績Dtoの休日へセット
                 kinmuJissekiDto.setKyuujitsuTime(jitsudouTime.toString());
             } else {
+            	/*
+             	* 計算処理を行うために各時間を
+             	* 秒に変換する。
+             	*/
+            	long startTimeShiftLong = CommonUtils.getSecond(startTimeShift);
+            	long endTimeShiftLong = CommonUtils.getSecond(endTimeShift);
+            	long breakTimeShiftLong = CommonUtils.getSecond(breakTimeShift);
+            	
+            	// 実労働時間(終了時間 - 開始時間)
+            	long jitsudouShiftTimeS = (endTimeLong - startTimeLong - breakTimeLong); // 秒
+            
+            	if (jitsudouShiftTimeS < 0) {
+                	// 休憩が多かったとき
+            		jitsudouShiftTimeS = 0;
+            	}
+            	//時間外労働時間(実労働時間 - ())
+            	long jikangaiTimeS = jitsudouShiftTimeS - (endTimeShiftLong - startTimeShiftLong - breakTimeShiftLong);
+            
+            	if (jitsudouShiftTimeS < 0) {
+            		// 時間外労働が無かった時
+            		jikangaiTimeS = 0;
+            	}
+            	
+            	// 秒を60で除算する → 分に変換。
+            	long jikangaiTimeM = jikangaiTimeS / 60; // 分
+            	// 分を60で除算する → 時に変換。
+            	long jikangaiTimeH = jikangaiTimeM / 60; // 時
+            	// 分を60で除算したときの余り → 分を算出する。
+            	jikangaiTimeM = jikangaiTimeM % 60; // 余りが分になる
+            
+            	StringBuffer jikangaiTime = new StringBuffer();
+            	jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeH), 2));
+            	jikangaiTime.append(colon);
+            	jikangaiTime.append(CommonUtils.padWithZero(String.valueOf(jikangaiTimeM), 2));
+            
+            
                 // シフトがある場合
 
                 // 実働時間を勤務実績Dtoの勤務実績へセット
