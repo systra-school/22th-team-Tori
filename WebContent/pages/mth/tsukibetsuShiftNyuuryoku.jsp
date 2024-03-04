@@ -545,11 +545,11 @@ if (listSize > intShowLength) {
             <td style="float: left;">
             	 <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()" />
             </td>
-            <td style="float: left;">
-            	 <input value="äÓñ{ÉVÉtÉgîΩâf" type="button" class="lngButton"  />
+            <td style="float: left;"> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
+            	 <input value="äÓñ{ÉVÉtÉgîΩâf" type="button" class="lngButton" onclick="submitSearch()" />
             </td>
-            <td style="float: left;">Å@<!-- î…âhÅ®îΩâfÅAåÎéöèCê≥ÅA2/28óLãg -->
-                 <input value="èoãŒäÛñ]ì˙îΩâf" type="button" class="lngButton"  />
+            <td style="float: left;">Å@<!-- î…âhÅ®îΩâfÅAåÎéöèCê≥ÅA2/28óLãg --> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
+                 <input value="èoãŒäÛñ]ì˙îΩâf" type="button" class="lngButton" onclick="submitShukkinKibou()" />
             </td>
           </tr>
         </table>
