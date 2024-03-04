@@ -79,6 +79,7 @@ String color = "";
               </html:select>
             </div>
           </div>
+          <!-- style="overflow-x: auto;overflow-y: hidden;を追加、2/28有吉 -->
           <div style="overflow-x: auto;overflow-y: hidden; width: 1088px; margin-left:100px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
@@ -124,7 +125,7 @@ String color = "";
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kadouDayDisp" /><br>
                   </td>
                   <bean:define id="youbi" name="kinmuJissekiNyuryokuKakuninList" property="youbi"/>
-
+                  <!-- color = "fontBlack";を削除、下記のコードを追加　2/27有吉 -->
                   <%
                   if (DayOfWeek.SATURDAY.getRyaku().equals(youbi)) {
                       color = "fontBlue";

@@ -54,8 +54,8 @@ public class KinmuJissekiDao extends AbstractDao {
             strSql.append("    SHIFT.SHAIN_ID         AS SHAIN_ID, ");
             strSql.append("    SHIFT.SHIFT_ID         AS SHIFT_ID, ");
             strSql.append("    SHIFT.SYMBOL           AS SYMBOL, ");
-            strSql.append("    SHIFT.START_TIME_SHIFT AS START_TIME_SHIFT, ");
-            strSql.append("    SHIFT.END_TIME_SHIFT   AS END_TIME_SHIFT,  ");
+            strSql.append("    SHIFT.START_TIME_SHIFT AS START_TIME_SHIFT, "); //SHIFT.START_TIME_SHIFT AS END_TIME_SHIFT,→SHIFT.START_TIME_SHIFT AS START_TIME_SHIFT,に変更、2/28有吉
+            strSql.append("    SHIFT.END_TIME_SHIFT   AS END_TIME_SHIFT,  "); //SHIFT.END_TIME_SHIFT   AS BREAK_TIME_SHIFT,→SHIFT.END_TIME_SHIFT   AS END_TIME_SHIFT,に変更、2/28有吉
             strSql.append("    SHIFT.BREAK_TIME_SHIFT AS BREAK_TIME_SHIFT, ");
             strSql.append("    (CASE WHEN SHIFT.KADOU_DAY IS NULL THEN TKJ.KADOU_DAY  ");
             strSql.append("    ELSE SHIFT.KADOU_DAY END) AS KADOU_DAY, ");
@@ -198,8 +198,8 @@ public class KinmuJissekiDao extends AbstractDao {
             strSql.append("    SHIFT.BREAK_TIME_SHIFT, ");
             strSql.append("    (CASE WHEN SHIFT.KADOU_DAY IS NULL THEN TKJ.KADOU_DAY  ");
             strSql.append("    ELSE SHIFT.KADOU_DAY END) KADOU_DAY, ");
-            strSql.append("    TKJ.START_TIME AS START_TIME, ");
-            strSql.append("    TKJ.END_TIME   AS END_TIME, ");
+            strSql.append("    TKJ.START_TIME AS START_TIME, ");//TKJ.START_TIME AS END_TIME,→TKJ.START_TIME AS START_TIME,に変更、2/22有吉
+            strSql.append("    TKJ.END_TIME   AS END_TIME, ");//TKJ.END_TIME   AS START_TIME,→TKJ.END_TIME   AS END_TIME,に変更、2/22有吉
             strSql.append("    TKJ.BREAK_TIME, ");
             strSql.append("    TKJ.JITSUDOU_TIME, ");
             strSql.append("    TKJ.JIKANGAI_TIME, ");
