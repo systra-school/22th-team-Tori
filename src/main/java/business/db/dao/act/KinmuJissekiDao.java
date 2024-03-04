@@ -200,7 +200,7 @@ public class KinmuJissekiDao extends AbstractDao {
             strSql.append("    ELSE SHIFT.KADOU_DAY END) KADOU_DAY, ");
             strSql.append("    TKJ.START_TIME AS START_TIME, ");//TKJ.START_TIME AS END_TIME,→TKJ.START_TIME AS START_TIME,に変更、2/22有吉
             strSql.append("    TKJ.END_TIME   AS END_TIME, ");//TKJ.END_TIME   AS START_TIME,→TKJ.END_TIME   AS END_TIME,に変更、2/22有吉
-            strSql.append("    TKJ.BREAK_TIME, ");
+            strSql.append("    TKJ.BREAK_TIME AS BREAK_TIME, ");
             strSql.append("    TKJ.JITSUDOU_TIME, ");
             strSql.append("    TKJ.JIKANGAI_TIME, ");
             strSql.append("    TKJ.KYUUJITSU_TIME, ");
