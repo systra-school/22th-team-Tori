@@ -372,14 +372,12 @@ if (listSize > intShowLength) {
                 </td>
               </tr>
             </table>
-            <div style="margin-top:5px;"><!--–}—á•\Ž¦‚Ìdivƒ^ƒO‚ðtable‚·‚®‰º‚ÖˆÚ“® margin-left:50px;¨margin-top;5px;‚Ö•ÏX-->
-              <input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()" />
-            </div>
           </div>
         </html:form>
       </div>
       <div id="footer">
         <table>
+          <div><input value="–}—á•\Ž¦" type="button" class="lngButton"  onclick="openWindow()"/></div>
           <tr>
             <td id="footLeft">
               <input value="ˆóü" type="button" class="smlButton"  onclick="submitPrint()" />
