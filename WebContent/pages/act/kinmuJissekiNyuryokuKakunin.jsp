@@ -2,13 +2,13 @@
 <%@page import="constant.CommonConstant.DayOfWeek"%>
 <%
 /**
- * ÉtÉ@ÉCÉãñºÅFkinmuJissekiNyuryokuKakunin.jsp
+ * „Éï„Ç°„Ç§„É´ÂêçÔºökinmuJissekiNyuryokuKakunin.jsp
  *
- * ïœçXóöó
+ * Â§âÊõ¥Â±•Ê≠¥
  * 1.0  2010/09/13 Kazuya.Naraki
  */
 %>
-<%@page contentType="text/html; charset=Shift_JIS" pageEncoding="Shift_JIS"%>
+<%@page contentType="text/html; charset=Shift_JIS" pageEncoding="UTF-8"%>
 <%@ page import="constant.RequestSessionNameConstant"%>
 <%@ page import="constant.CommonConstant"%>
 <%@taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
@@ -25,24 +25,25 @@
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
-    <!--
-
+   
+<!--
     /**
-     * ìoò^Ç÷
+     * ÁôªÈå≤„Å∏
      */
     function regist() {
-        // ÉTÉuÉ~ÉbÉg
+        // „Çµ„Éñ„Éü„ÉÉ„Éà
         doSubmit('/kikin/kinmuJissekiNyuryokuKakuninRegist.do');
     }
     /**
-     * åüçı
+     * Ê§úÁ¥¢
      */
     function submitSearch() {
         doSubmit('/kikin/kinmuJissekiNyuryokuKakuninSearch.do');
     }
-    -->
+  -->
+  
     </script>
-    <title>ãŒñ±é¿ê—ì¸óÕâÊñ </title>
+    <title>Âã§ÂãôÂÆüÁ∏æÂÖ•ÂäõÁîªÈù¢</title>
 
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
@@ -52,13 +53,13 @@
         <table width="100%">
           <tr>
             <td id="headLeft">
-              <input value="ñﬂÇÈ" type="button" class="smlButton"  onclick="doSubmit('/kikin/kinmuJissekiNyuryokuKakuninBack.do')" />
+              <input value="Êàª„Çã" type="button" class="smlButton"  onclick="doSubmit('/kikin/kinmuJissekiNyuryokuKakuninBack.do')" />
             </td>
             <td id="headCenter">
-              ãŒñ±é¿ê—ì¸óÕ
+              Âã§ÂãôÂÆüÁ∏æÂÖ•Âäõ
             </td>
             <td id="headRight">
-                <input value="ÉçÉOÉAÉEÉg" type="button" class="smlButton"  onclick="logout()" />
+                <input value="„É≠„Ç∞„Ç¢„Ç¶„Éà" type="button" class="smlButton"  onclick="logout()" />
               </td>
           </tr>
         </table>
@@ -67,7 +68,7 @@
         <html:form action="/shainMstMntRegist" >
           <div style="float: left; width: 100%;">
             <div style="float: left; width: 844px; text-align: left; margin-left:100px;">
-              ï\é¶îNåéÅF
+              Ë°®Á§∫Âπ¥ÊúàÔºö
               <html:select name="kinmuJissekiNyuryokuKakuninForm" property="yearMonth" onchange="submitSearch()">
               <html:optionsCollection name="kinmuJissekiNyuryokuKakuninForm"
                                       property="yearMonthCmbMap"
@@ -76,49 +77,49 @@
               </html:select>
             </div>
             <div style="float: left; width: 284px; text-align: left;">
-              é–àıID&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainId"/>
-              ÅFé–àıñº&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainName"/>
+              Á§æÂì°ID&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainId"/>
+              ÔºöÁ§æÂì°Âêç&nbsp;<bean:write name="kinmuJissekiNyuryokuKakuninForm" property="shainName"/>
             </div>
           </div>
           <div>
-          <!-- style="overflow-x: auto;overflow-y: hidden;Çí«â¡ÅA2/28óLãg -->
-          <div style="overflow-x: auto;overflow-y: hidden; width: 1088px; margin-left:100px;">
+          <!-- style="overflow ‰øÆÊ≠£3/6-->
+          <div style="overflow:auto; width:1088px; margin-left:100px;">
             <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
               <tr>
                 <td width="50px" align="center">
-                  ì˙ït
+                  Êó•‰ªò
                 </td>
                 <td width="30px" align="center">
-                  ój
+                  Êõú
                 </td>
                 <td width="50px" align="center">
-                  ÉVÉtÉg
+                  „Ç∑„Éï„Éà
                 </td>
                 <td width="100px" align="center">
-                  äJénéûçè
+                  ÈñãÂßãÊôÇÂàª
                 </td>
                 <td width="100px" align="center">
-                  èIóπéûçè
+                  ÁµÇ‰∫ÜÊôÇÂàª
                 </td>
                 <td width="100px" align="center">
-                  ãxåe
+                  ‰ºëÊÜ©
                 </td>
                 <td width="100px" align="center">
-                  é¿ì≠éûä‘
+                  ÂÆüÂÉçÊôÇÈñì
                 </td>
                 <td width="100px" align="center">
-                  éûä‘äO
+                  ÊôÇÈñìÂ§ñ
                 </td>
                 <td width="100px" align="center">
-                  ãxì˙
+                  ‰ºëÊó•
                 </td>
                 <td width="320px" align="center">
-                  îıçl
+                  ÂÇôËÄÉ
                 </td>
               </tr>
             </table>
           </div>
-            <div style="overflow: auto; height: 400px; width: 1088px; margin-left:100px; ">
+            <div style="overflow: auto; height: 420px; width: 1088px; margin-left:100px;">
             <logic:iterate id="kinmuJissekiNyuryokuKakuninList" name="kinmuJissekiNyuryokuKakuninForm" property="kinmuJissekiNyuryokuKakuninList" indexId="idx">
               <table class="tblBody" border="1" cellpadding="0" cellspacing="0">
                 <tr>
@@ -145,13 +146,13 @@
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="symbol" /><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="8" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="startTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="8" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="endTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
-                    <html:text style="text-align:center" size="9" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
+                    <html:text style="text-align:center" size="8" maxlength="5" name="kinmuJissekiNyuryokuKakuninList" property="breakTime" indexed="true"></html:text><br>
                   </td>
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="jitsudouTime" /><br>
@@ -162,8 +163,8 @@
                   <td width="100px" align="center">
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kyuujitsuTime" /><br>
                   </td>
-                  <td width="320px" align="left">
-                    <html:text style="text-align:left" size="39" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
+                  <td width="320px" align="center">
+                    <html:text style="text-align:left" size="38" name="kinmuJissekiNyuryokuKakuninList" property="bikou" indexed="true"></html:text><br>
                   </td>
                 </tr>
               </table>
@@ -176,13 +177,13 @@
         <table>
           <tr>
               <td id="footLeft">
-                Å@
+                
               </td>
               <td id="footCenter">
-                Å@
+                
               </td>
               <td id="footRight">
-                <input value="ìoò^"  type="button" class="smlButton"  onclick="regist()" />
+                <input value="ÁôªÈå≤"  type="button" class="smlButton"  onclick="regist()" />
               </td>
           </tr>
         </table>
