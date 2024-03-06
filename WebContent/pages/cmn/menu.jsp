@@ -71,7 +71,7 @@
 
           <div class="menuBlock">
             <html:form action="/shukkinKibouKakuninInit">
-              <input type="submit" value="出勤希望日確認" class="bigButton" />
+              <input type="submit" value="出勤希望確認" class="bigButton" />
             </html:form>
             <html:form action="/tsukibetsuShiftNyuuryokuInit">
               <input type="submit" value="月別シフト入力" class="bigButton" />
@@ -112,7 +112,7 @@
 
           <div class="menuBlock">
             <html:form action="/shukkinKibouNyuuryokuInit">
-              <input type="submit" value="希望出勤日入力" class="bigButton" />
+              <input type="submit" value="出勤希望入力" class="bigButton" />
             </html:form>
           </div>
 

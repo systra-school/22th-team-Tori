@@ -542,7 +542,7 @@
             </td>
             <td id="footRight">
             <div style="padding-bottom:50px;">
-            <input value="o‹ÎŠó–]“úŽQÆ" type="button" class="lngButton"  onclick="openSearch()" />
+            <input value="o‹ÎŠó–]ŽQÆ" type="button" class="lngButton"  onclick="openSearch()" />
             <input value="“o˜^" type="button" class="smlButton"  onclick="submitRegist()" />
             </div>
             </td>
