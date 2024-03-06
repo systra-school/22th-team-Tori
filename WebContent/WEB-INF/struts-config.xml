@@ -32,6 +32,7 @@
       <form-bean name="kihonShiftMstMntForm" type="form.bse.KihonShiftMstMntForm" />
       <!-- 月別シフト入力画面フォーム -->
       <form-bean name="tsukibetsuShiftNyuuryokuForm" type="form.mth.TsukibetsuShiftNyuuryokuForm"/>
+      <!-- 月別シフト入力基本シフト反映画面フォーム -->
       <!-- 月別シフト確認画面フォーム -->
       <form-bean name="tsukibetsuShiftKakuninForm" type="form.mth.TsukibetsuShiftKakuninForm"/>
       <!-- シフト凡例画面フォーム -->
@@ -462,6 +463,14 @@
       <action
         path="/tsukibetsuShiftNyuuryokuShukkinKibou"
         type="action.mth.TsukibetsuShiftNyuuryokuKibouHaneiAction"
+        name="tsukibetsuShiftNyuuryokuForm"
+        scope="session">
+        <forward name="success" path="/pages/mth/tsukibetsuShiftNyuuryoku.jsp"/>
+      </action>
+      <!-- 月別シフト基本シフト反映 -->
+      <action
+        path="/tsukibetsuShiftNyuuryokuKihonHanei"
+        type="action.mth.TsukibetsuShiftNyuuryokuKihonHaneiAction"
         name="tsukibetsuShiftNyuuryokuForm"
         scope="session">
         <forward name="success" path="/pages/mth/tsukibetsuShiftNyuuryoku.jsp"/>
