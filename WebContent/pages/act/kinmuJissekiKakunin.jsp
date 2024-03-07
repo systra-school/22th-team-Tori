@@ -125,11 +125,12 @@ String color = "";
                     <bean:write name="kinmuJissekiNyuryokuKakuninList" property="kadouDayDisp" /><br>
                   </td>
                   <bean:define id="youbi" name="kinmuJissekiNyuryokuKakuninList" property="youbi"/>
+                  <bean:define id="shukujitsuFlg" name="kinmuJissekiNyuryokuKakuninList" property="shukujitsuFlg"/>
                   <!-- color = "fontBlack";を削除、下記のコードを追加　2/27有吉 -->
                   <%
                   if (DayOfWeek.SATURDAY.getRyaku().equals(youbi)) {
                       color = "fontBlue";
-                  } else if (DayOfWeek.SUNDAY.getRyaku().equals(youbi)) {
+                  } else if (DayOfWeek.SUNDAY.getRyaku().equals(youbi) || ((boolean)shukujitsuFlg)) {
                       color = "fontRed";
                   } else {
                       color = "fontBlack";
