@@ -15,6 +15,7 @@
 <%@taglib uri="http://struts.apache.org/tags-logic" prefix="logic"%>
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <bean:define id="color" value="" type="java.lang.String"/>
+<bean:size id="jissekiListSize" name="kinmuJissekiNyuryokuKakuninForm"  property="kinmuJissekiNyuryokuKakuninList"/>
 <bean:size id="dateBeanListSize" name="kinmuJissekiNyuryokuKakuninForm"  property="dateBeanList"/>
 <html>
   <head>
@@ -26,19 +27,89 @@
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
     <script type="text/javascript" language="Javascript1.1">
     <!--
-
-    /**
-     * 登録へ
-     */
-    function regist() {
-        // サブミット
-        doSubmit('/kikin/kinmuJissekiNyuryokuKakuninRegist.do');
-    }
     /**
      * 検索
      */
     function submitSearch() {
         doSubmit('/kikin/kinmuJissekiNyuryokuKakuninSearch.do');
+    }
+    
+    /**
+     * 更新処理を行う
+     */
+    function kinmuJissekiNyuryokuKakuninInit() {
+
+        // 一覧のサイズ
+        var listSize = <%= jissekiListSize %>;
+
+        // 開始時間エラーメッセージ
+        var startTimeErrMsg = '';
+        // 終了時間エラーメッセージ
+        var endTimeErrMsg = '';
+        // 休憩時間エラーメッセージ
+        var breakTimeErrMsg = '';
+        // From - To エラーメッセージ
+        var fromToErrMsg = '';
+        // エラーメッセージ
+        var errorMsg = '';
+
+
+        with(document.forms[0].elements) {
+
+            for (var i = 0; i < listSize; i++) {
+            	
+            	// 開始時間を取得する。
+                var startTime = namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].startTime').value;
+                // 終了時間を取得する。
+                var endTime = namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].endTime').value;
+                // 休憩時間を取得する。
+                var breakTime = namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].breakTime').value;
+
+                if (startTime || endTime || breakTime) {
+                // 背景色をクリアする
+                namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].startTime').style.backgroundColor = 'white';
+                namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].endTime').style.backgroundColor = 'white';
+                namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].breakTime').style.backgroundColor = 'white';
+
+                // 時間チェック
+                    if (!checkTime(startTime)) {
+                        var strArr = ['開始時間'];
+                        startTimeErrMsg = getMessage('E-MSG-000004', strArr);
+                        namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].startTime').style.backgroundColor = 'red';
+                    }
+                    if (!checkTime(endTime)) {
+                        var strArr = ['終了時間'];
+                        endTimeErrMsg = getMessage('E-MSG-000004', strArr);
+                        namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].endTime').style.backgroundColor = 'red';
+                    }
+                    if (!checkTime(breakTime)) {
+                        var strArr = ['休憩時間'];
+                        breakTimeErrMsg = getMessage('E-MSG-000004', strArr);
+                        namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].breakTime').style.backgroundColor = 'red';
+                    }
+
+                // from - to のチェック
+                	if (!checkTimeCompare(startTime, endTime)) {
+                    	if (checkTime(startTime) && checkTime(endTime)) {
+                        	fromToErrMsg = getMessageCodeOnly('E-MSG-000005');
+                        	namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].startTime').style.backgroundColor = 'red';
+                        	namedItem('kinmuJissekiNyuryokuKakuninList['+ i +'].endTime').style.backgroundColor = 'red';
+                    	}
+                	}
+                }
+            }
+        }
+        // エラーメッセージ
+        errorMsg = startTimeErrMsg + endTimeErrMsg + breakTimeErrMsg + fromToErrMsg;
+
+        if (errorMsg) {
+            alert(errorMsg);
+            // エラー
+            return false;
+        }
+		
+        document.forms[0].action = 'kinmuJissekiNyuryokuKakuninRegist.do';
+        document.forms[0].submit();
     }
     -->
     </script>
@@ -182,7 +253,7 @@
                 　
               </td>
               <td id="footRight">
-                <input value="登録"  type="button" class="smlButton"  onclick="regist()" />
+                <input value="登録"  type="button" class="smlButton"  onclick="kinmuJissekiNyuryokuKakuninInit()" />
               </td>
           </tr>
         </table>
