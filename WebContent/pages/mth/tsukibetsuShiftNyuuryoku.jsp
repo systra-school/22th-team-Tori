@@ -78,7 +78,7 @@ if (listSize > intShowLength) {
      * åüçı
      */
     function submitSearch() {
-        doSubmit('/kikin/tsukibetsuShiftNyuuryokuKihonHanei.do');
+        doSubmit('/kikin/tsukibetsuShiftNyuuryokuSearch.do');
     }
 
     /**
@@ -86,6 +86,13 @@ if (listSize > intShowLength) {
      */
     function openWindow(){
         window.open("/kikin/shiftHanrei.do?param=", null, "menubar=no, toolbar=no, scrollbars=auto, resizable=yes, width=520px, height=650px");
+    }
+    
+    /**
+     * äÓñ{ÉVÉtÉgîΩâf
+     */
+     function submitHanei(){
+    	 doSubmit('/kikin/tsukibetsuShiftNyuuryokuKihonHanei.do');
     }
     -->
     </script>
@@ -551,7 +558,7 @@ if (listSize > intShowLength) {
             	 <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()" />
             </td>
             <td style="float: left;"> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
-            	 <input value="äÓñ{ÉVÉtÉgîΩâf" type="button" class="lngButton" onclick="submitSearch()" />
+            	 <input value="äÓñ{ÉVÉtÉgîΩâf" type="button" class="lngButton" onclick="submitHanei()" />
             </td>
             <td style="float: left;">Å@<!-- î…âhÅ®îΩâfÅAåÎéöèCê≥ÅA2/28óLãg --> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
                  <input value="èoãŒäÛñ]ì˙îΩâf" type="button" class="lngButton" onclick="submitShukkinKibou()" />
