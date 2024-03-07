@@ -68,7 +68,7 @@
     }
     -->
     </script>
-    <title>日別シフト確認画面</title>
+    <title>日別シフト確認</title>
 
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
@@ -81,7 +81,7 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/hibetsuShiftBack.do')" />
             </td>
             <td id="headCenter">
-              日別シフト確認画面
+              日別シフト確認
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />
