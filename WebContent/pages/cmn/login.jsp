@@ -7,11 +7,23 @@
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+	<script type="text/javascript" src="/kikin/pages/js/common.js"></script>
+    <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
+    <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
 	<html:javascript formName="loginForm" />
 	<title>ƒƒOƒCƒ“‰æ–ÊLogin</title>
 	<link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <%
+  if(session.getAttribute("error") != null){
+  %>
+  <script type="text/javascript">
+  	var msg = getMessageCodeOnly('E-MSG-000002');
+    alert(msg);
+  </script>
+  <%
+  session.setAttribute("error", null);}%>
         <div id="wrapper">
         <div id="header">
             <table>

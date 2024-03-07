@@ -78,6 +78,7 @@ public class LoginAction extends Action {
 
         if (CheckUtils.isEmpty(loginDto)) {
             forward = "error";
+            session.setAttribute("error", "true");
         } else {
 
             // ログインユーザ保持用Dtoを作成する
