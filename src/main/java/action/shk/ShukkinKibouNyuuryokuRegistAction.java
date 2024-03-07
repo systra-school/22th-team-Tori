@@ -72,7 +72,7 @@ public class ShukkinKibouNyuuryokuRegistAction extends ShukkinKibouAbstractActio
         List<ShukkinKibouNyuuryokuBean> shukkinKibouNyuuryokuBeanList = shukkinKibouNyuuryokuForm.getShukkinKibouNyuuryokuBeanList();
 
         // 対象年月
-        String yearMonth = CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl);
+        String yearMonth = shukkinKibouNyuuryokuForm.getYearMonth();
 
         // ロジック生成
         ShukkinKibouLogic shukkinKibouLogic = new ShukkinKibouLogic();
