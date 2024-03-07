@@ -44,7 +44,7 @@ String color = "";
     }
     -->
     </script>
-    <title>出勤希望確認</title>
+    <title>出勤希望確認画面</title>
 
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>

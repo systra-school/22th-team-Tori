@@ -92,7 +92,7 @@
               <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/shainMstMntRegistBack.do')" />
             </td>
             <td id="headCenter">
-              社員マスタメンテナンス画面（新規登録）
+              社員マスタメンテナンス（新規登録）
             </td>
             <td id="headRight">
               <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />

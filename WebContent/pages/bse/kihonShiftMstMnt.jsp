@@ -37,7 +37,7 @@
     </script>
 
     <title>
-    基本シフト登録
+    基本シフト登録画面
     </title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>

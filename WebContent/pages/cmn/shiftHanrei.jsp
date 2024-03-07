@@ -30,7 +30,7 @@
     </script>
 
     <title>
-      シフト凡例
+      シフト凡例画面
     </title>
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>

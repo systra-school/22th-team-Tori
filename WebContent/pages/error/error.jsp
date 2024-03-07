@@ -8,7 +8,7 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
 <script type="text/javascript" src="/kikin/pages/js/common.js"></script>
-<title>エラー</title>
+<title>エラー画面</title>
 <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
