@@ -73,7 +73,7 @@ public class TsukibetsuShiftNyuuryokuKihonHaneiAction extends Action {
         TsukibetsuShiftNyuuryokuForm tsukibetsuShiftForm = (TsukibetsuShiftNyuuryokuForm) form;
 
         
-        String yearMonth = CommonUtils.getFisicalDay(CommonConstant.yearMonthNoSl);
+        String yearMonth = tsukibetsuShiftForm.getYearMonth();
         List<DateBean> dateBeanList = CommonUtils.getDateBeanList(yearMonth);//現在日付yearMonthをもとに該当月一日毎の曜日などを取得している
 
         
