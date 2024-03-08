@@ -131,13 +131,18 @@ errorbody {
 * �{�^���T�C�Y�ʏ�
 */
 .smlButton {
-    width: 100px;
-    height: 30px;
-    background-color: #E0E0E0;
+    width: 80px;
+    height:50px;
+    background-color: rgb(255, 0, 128);
     border: none;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 	transition: transform 0.3s ease, box-shadow 0.5s ease;
-	transition: background-color 0.3s, color 0.3s;}
+	transition: background-color 0.3s, color 0.3s;
+	border-radius: 50%;
+	color: #fff;
+	line-height: 50px;
+    padding: 0;
+	}
 	
 .smlbutton:focus {
     outline: none; /* フォーカス時のアウトラインを削除 */
@@ -158,11 +163,15 @@ errorbody {
 .bigButton {
     width: 200px;
     height: 50px;
-    background-color: #E0E0E0;
+    background-color: rgb(0, 255, 0);
     border: none;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 	transition: transform 0.3s ease, box-shadow 0.5s ease;
-	transition: background-color 0.3s, color 0.3s;}
+	transition: background-color 0.3s, color 0.3s;
+	border-radius: 100vh;
+	border-bottom: 7px solid #0686b2;
+	color: #fff;
+}
 	 
 .bigbutton:focus {
     outline: none; /* フォーカス時のアウトラインを削除 */
@@ -189,7 +198,7 @@ errorbody {
 	transition: transform 0.3s ease, box-shadow 0.5s ease;
 	transition: background-color 0.3s, color 0.3s;}
 
-.bigbutton:hover {
+.lngbutton:hover {
   background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);/* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
