@@ -1,8 +1,8 @@
 /**
- * ファイル名：KihonShiftMstMntKakuninInitAction.java
+ * ファイル名：TsukibetuShiftNyuuryokuKihonHaneiAction.java
  *
  * 変更履歴
- * 1.0  2010/11/02 Kazuya.nishioka
+ * 1.0  2010/11/02 Kiji.ko
  */
 package action.mth;
 
@@ -19,7 +19,6 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
@@ -41,7 +40,7 @@ import form.mth.TsukibetsuShiftNyuuryokuForm;
  * @author nishioka
  *
  */
-public class TsukibetsuShiftNyuuryokuKihonHaneiAction extends Action {
+public class TsukibetsuShiftNyuuryokuKihonHaneiAction extends TsukibetsuShiftNyuuryokuAbstractAction {
 
     // ログ出力クラス
     private Log log = LogFactory.getLog(this.getClass());
@@ -101,7 +100,7 @@ public class TsukibetsuShiftNyuuryokuKihonHaneiAction extends Action {
         // ページング用
         tsukibetsuShiftForm.setOffset(0);
         tsukibetsuShiftForm.setCntPage(1);
-        tsukibetsuShiftForm.setMaxPage(CommonUtils.getMaxPage(kihonShiftDataMap.size(), 16));
+        tsukibetsuShiftForm.setMaxPage(CommonUtils.getMaxPage(kihonShiftDataMap.size(), SHOW_LENGTH));
 
 
 
