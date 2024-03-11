@@ -177,7 +177,7 @@ errorbody {
 }	
 
 .smlbutton:hover {
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
+  background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
 /*
@@ -215,7 +215,7 @@ errorbody {
 }
 
 .bigbutton:hover {
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
+  background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
 /*
@@ -256,7 +256,7 @@ errorbody {
 */
 
 .lngbutton:hover {
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);/* ホバー時の背景色 */
+  background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
 	
