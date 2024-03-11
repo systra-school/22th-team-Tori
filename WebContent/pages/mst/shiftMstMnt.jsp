@@ -192,29 +192,29 @@
               <bean:define id="shiftId" name= "shiftMstMntBeanList" property="shiftId" type="java.lang.String"/>
                 <tr>
                   <td width="110px"  align="center">
-                    <html:text property="shiftName" name="shiftMstMntBeanList" size="3" maxlength="10" indexed="true"/>
+                    <html:text style="text-align:center" property="shiftName" name="shiftMstMntBeanList" size="3" maxlength="10" indexed="true"/>
                     <html:hidden property="shiftId" name="shiftMstMntBeanList" indexed="true"/>
                   </td>
                   <td width="75px"  align="center">
-                    <html:text property="symbol" name="shiftMstMntBeanList"  size="1" maxlength="2" indexed="true"/>
+                    <html:text style="text-align:center" property="symbol" name="shiftMstMntBeanList"  size="1" maxlength="2" indexed="true"/>
                   </td>
                   <td width="230px"  align="center">
                     <table width="100%" >
                       <tr>
                         <td align="center">
-                          <html:text property="startTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                          <html:text style="text-align:center" property="startTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                         </td>
                         <td align="center">
                             &#xFF5E;
                         </td>
                         <td align="center">
-                          <html:text property="endTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                          <html:text style="text-align:center" property="endTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                         </td>
                       </tr>
                     </table>
                   </td>
                   <td width="100px"  align="center">
-                    <html:text property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
+                    <html:text style="text-align:center" property="breakTime" name="shiftMstMntBeanList"  size="5" maxlength="5" indexed="true"/>
                   </td>
 
                   <td width="70px"  align="center">
