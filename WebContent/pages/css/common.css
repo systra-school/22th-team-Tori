@@ -2,9 +2,10 @@
 * body��`
 */
 body {
+	margin-top: 10px;
+    padding-top: 20px;
 	background-color: rgb(0, 128, 192);
     overflow: hidden;
-    display: flex;
     justify-content: center;
 }
 html {
