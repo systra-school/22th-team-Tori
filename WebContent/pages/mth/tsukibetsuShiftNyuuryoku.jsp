@@ -555,12 +555,12 @@ if (listSize > intShowLength) {
         <table>
           <tr>
             <td style="float: left;">
-            	 <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()" />
+            	 <input value="ñ}ó·ï\é¶" type="button" class="lngButton" onclick="openWindow()" />
             </td>
             <td style="float: left;"> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
             	 <input value="äÓñ{ÉVÉtÉgîΩâf" type="button" class="lngButton" onclick="submitHanei()" />
             </td>
-            <td style="float: left;">Å@<!-- î…âhÅ®îΩâfÅAåÎéöèCê≥ÅA2/28óLãg --> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
+            <td style="float: left;"> <!-- î…âhÅ®îΩâfÅAåÎéöèCê≥ÅA2/28óLãg --> <%-- è·äQï\58ëŒâû 3/4 îíêŒ --%>
                  <input value="èoãŒäÛñ]ì˙îΩâf" type="button" class="lngButton" onclick="submitShukkinKibou()" />
             </td>
           </tr>
