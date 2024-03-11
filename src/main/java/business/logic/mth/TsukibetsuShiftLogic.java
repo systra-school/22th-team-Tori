@@ -23,17 +23,15 @@ import org.bbreak.excella.reports.tag.ColRepeatParamParser;
 import org.bbreak.excella.reports.tag.RowRepeatParamParser;
 import org.bbreak.excella.reports.tag.SingleParamParser;
 
-import form.common.DateBean;
-import form.mth.TsukibetsuShiftKakuninBean;
-import form.mth.TsukibetsuShiftKakuninForm;
-
 import action.mth.TsukibetsuShiftKakuninPrintAction;
 import business.db.dao.mth.TsukibetsuShiftDao;
 import business.dto.LoginUserDto;
-import business.dto.mth.TsukibetsuBaseShiftDto;
 import business.dto.mth.TsukibetsuShiftDto;
 import business.logic.utils.CheckUtils;
 import business.logic.utils.CommonUtils;
+import form.common.DateBean;
+import form.mth.TsukibetsuShiftKakuninBean;
+import form.mth.TsukibetsuShiftKakuninForm;
 
 /**
  * 説明：希望出勤日入力処理のロジック
@@ -265,7 +263,8 @@ public class TsukibetsuShiftLogic {
         List<String> shiftIdList31 = new ArrayList<String>();
 
         // 日付ごとにリストに加えていく
-        for (int i = 0; i < tsukibetsuShiftKakuninBeanList.size() - 1; i++) {
+        // 障害表084、085対応 2024/03/11 中川
+        for (int i = 0; i < tsukibetsuShiftKakuninBeanList.size(); i++) {
             // 人毎（行ごと）のデータを追加していく
 
             TsukibetsuShiftKakuninBean shukkinKibouKakuninBean = tsukibetsuShiftKakuninBeanList.get(i);
