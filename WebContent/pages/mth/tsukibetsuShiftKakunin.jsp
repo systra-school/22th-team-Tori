@@ -378,15 +378,14 @@ if (listSize > intShowLength) {
       </div>
       <div id="footer">
         <table>
-          <div><input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()"/></div>
-          <tr>
-            <td id="footLeft">
+        <tr>
+        <td style="float: left;">
+          <input value="ñ}ó·ï\é¶" type="button" class="lngButton"  onclick="openWindow()"/>
+        </td>
+        <td style="float: left;">Å@Å@
               <input value="àÛç¸" type="button" class="smlButton"  onclick="submitPrint()" />
-            </td>
-            <td id="footCenter" style="text-align: right;">
-            </td>
-            <td id="footRight">
-            </td>
+        </td>
+            
           </tr>
         </table>
       </div>
