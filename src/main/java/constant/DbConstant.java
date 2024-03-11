@@ -253,4 +253,34 @@ public class DbConstant {
             return name;
         }
     }
+    
+    /**
+     * 追加機能
+     * 業務連絡テーブル
+     */
+    public enum G_Gyoumu_Renraku {
+    	
+    	TABLE_NAME("G_GYOUMU_RENRAKU"),
+    	SHAIN_ID("SHAIN_ID"),
+    	SHAIN_NAME("SHAIN_NAME"),
+    	YEAR_MONTH_DAY("YEAR_MONTH_DAY"),
+    	TITLE("TITLE"),
+    	MEMO("MEMO"),
+    	CREATE_SHAIN_ID("CREATE_SHAIN_ID"),
+        CREATE_DT("CREATE_DT");
+    	
+    	private String name;
+    	
+    	// コンストラクタ
+    	private G_Gyoumu_Renraku(String name) {
+    		this.name = name;
+    	}
+    	/**
+         * シフトテーブルの名称を取得する
+         * @return value
+         */
+    	public String getName() {
+    		return name;
+    	}
+    }
 }
