@@ -4,7 +4,11 @@
 <%@taglib uri="http://struts.apache.org/tags-html" prefix="html"%>
 <html>
 <head>
-	<meta http-equiv="Pragma" content="no-cache">
+
+<!--  デザインいじり 2024/3/8 古川-->
+	<link rel = "stylesheet" href = "css/common.css">
+
+ <meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
 	<script type="text/javascript" src="/kikin/pages/js/common.js"></script>
@@ -15,7 +19,12 @@
 	<link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <%
+
+<div class="src1"></div>
+
+
+
+ <%
   if(session.getAttribute("error") != null){
   %>
   <script type="text/javascript">
@@ -44,7 +53,7 @@
 
 		<div id="gymBody">
 		  <div align="center">
-		    <div>ID・パスワードを入力してください。</div>
+		    <div>ID・パスワードを入力してください。	</div>
 		    <html:form action="/login" onsubmit="return validateLoginForm(this)">
 		      <html:text property="shainId" size="16" />
 		      <br/>

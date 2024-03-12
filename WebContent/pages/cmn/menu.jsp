@@ -8,7 +8,7 @@
 
 
 <html>
-  <head>
+  <head>  
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
@@ -21,6 +21,8 @@
     <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+  
+        <div class="src2"></div>
     <div id="wrapper">
       <div id="header">
         <table>
@@ -124,7 +126,7 @@
 
         </logic:equal>
       </div>
-      <div id="footer">
+      <div id="footer">      
         <table>
           <tr>
             <td id="footLeft">
