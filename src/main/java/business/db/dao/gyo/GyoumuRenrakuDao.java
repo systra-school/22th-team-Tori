@@ -86,7 +86,8 @@ public class GyoumuRenrakuDao extends AbstractDao {
     		strSql.append("TITLE, ");
     		strSql.append("MEMO ");
     		strSql.append("FROM ");
-    		strSql.append("G_GYOUMU_RENRAKU");
+    		strSql.append("G_GYOUMU_RENRAKU ");
+    		strSql.append("ORDER BY YEAR_MONTH_DAY DESC");
     		
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
             // ログ出力

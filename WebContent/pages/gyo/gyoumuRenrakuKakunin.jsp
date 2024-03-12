@@ -38,7 +38,7 @@
         <table>
           <tr>
             <td id="headLeft">
-              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/gyoumuRenrakuKakuninBack.do')" />
+              <input value="戻る" type="button" class="smlButton"  onclick="doSubmit('/kikin/gyoumuRenrakuNyuuryokuBack.do')" />
             </td>
             <td id="headCenter">
               業務連絡
@@ -54,36 +54,36 @@
         	<div style="overflow-x: auto;overflow-y: hidden; width: 1088px;margin-left:100px">
         		<table class="tblHeader" border="1"   cellpadding="0" cellspacing="0">
         		<tr>
-                  <td width="200px" align="center">
+                  <td width="110px" align="left">
                   社員名
                   </td>
-                  <td width="199px" align="center">
+                  <td width="110px" align="left">
                   投稿日
                   </td>
-                  <td width="200px" align="center">
+                  <td width="200px" align="left">
                   タイトル
                   </td>
-                  <td width="200px" align="center">
+                  <td width="600px" align="left">
                   内容
                   </td>
                 </tr>
         		</table>
         	</div>
         	<div style="overflow: auto; height:440px; width:1030px; margin-left:100px ">
-        		<table class="tblBody" border="1"  cellpadding="0" cellspacing="0" >
+        		<table class="tblBody" border="1" style="font-size: 14px;" >
         		<logic:iterate indexId="idx" id="gyoumuRenrakuBeanList" name="gyoumuRenrakuNyuuryokuKakuninForm"  property="gyoumuRenrakuNyuuryokuKakuninList">
         		<tr>
-                  <td width="200px"  align="center">
-                    <html:text property="shainName" name="gyoumuRenrakuBeanList" size="10" maxlength="6" indexed="true"/>
+                  <td width="105px"  align="left">
+                    <bean:write property="shainName" name="gyoumuRenrakuBeanList" />
                   </td>
-                  <td width="200px"  align="center">
-                    <html:text property="yearMonth" name="gyoumuRenrakuBeanList"  size="10" maxlength="8" indexed="true" />
+                  <td width="105px"  align="left">
+                    <bean:write property="yearMonth" name="gyoumuRenrakuBeanList" />
                   </td>
-                  <td width="200px"  align="center">
-                    <html:text property="title" name="gyoumuRenrakuBeanList" size="20" maxlength="20" indexed="true" />
+                  <td width="200px"  align="left">
+                    <bean:write property="title" name="gyoumuRenrakuBeanList" />
                   </td>
-                  <td width="200px"  align="center">
-                    <html:text property="memo" name="gyoumuRenrakuBeanList"  size="20" maxlength="200" indexed="true" />
+                  <td width="600px"  align="left">
+                    <bean:write property="memo" name="gyoumuRenrakuBeanList" />
                   </td>
                 </tr>
         		</logic:iterate>
