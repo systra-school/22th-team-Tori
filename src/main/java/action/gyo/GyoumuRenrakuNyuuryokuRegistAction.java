@@ -47,6 +47,11 @@ public class GyoumuRenrakuNyuuryokuRegistAction extends Action {
         //登録
         gyoumuRenrakuLogic.registGyoumuRenraku(gyoumuRenrakuDto, loginUserDto);
         
+        //登録後データ削除
+        gyoumuRenrakuForm.setShainId(null);
+        gyoumuRenrakuForm.setShainName(null);
+        gyoumuRenrakuForm.setTitle(null);
+        gyoumuRenrakuForm.setMemo(null);
         return mapping.findForward(forward);
 	}
 	 /**
