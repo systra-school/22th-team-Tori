@@ -10,7 +10,6 @@ body {
     background-image: url("./images/16.14.51.gif");
     background-size:100%;
 }
-
 html {
     overflow-y: scroll;
    
@@ -56,14 +55,14 @@ errorbody {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
-  /*animation: gradientEffect 2.5s infinite alternate;*/
+  animation: gradientEffect 3s infinite alternate;
 }
-/*
+
 @keyframes gradientEffect {
   from {background-position: left}
   to {background-position: right}
 }
-*/
+
 
 #headRight {
     width:200px;
@@ -155,15 +154,15 @@ errorbody {
 .smlButton {
     width: 80px;
     height:30px;
-    background-image: linear-gradient(to right, #E095BF 10%, #B63EE5 90%);
+    background-image: linear-gradient(to right, white,lightblue,blue);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	transition: transform 0.3s ease, box-shadow 0.5s ease;
 	transition: background-color 0.3s, color 0.3s;
 	border-radius: 100vh;
-	color: #fff;
+	color: black;
 	line-height: 30px;
     padding: 0;
-    /*animation: move_c 0.5s infinite;*/
+    animation: move_c 03s infinite;
     border: 2px solid #fff;
 	}
 	
@@ -177,15 +176,19 @@ errorbody {
 }	
 
 .smlbutton:hover {
-  background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
+	  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
-/*
+
 @keyframes move_c {
-    0% {transform: translate(0px, 0)}
-    50% {transform: translate(0px, 0) rotateZ(5deg)}
+    0% {transform: translateY(0);
+    }
+    50% {transform: translateY(-20px);
+    }
+     100% {transform: translateY(0);
+    }
 }
-*/
+
 
 /*
 * �{�^���T�C�Y��
@@ -203,7 +206,7 @@ errorbody {
 	border-radius: 100vh;
 	border-bottom: 7px solid #0686b2;
 	color: #fff;
-	/*animation: move_c 3s infinite;*/
+	animation: move_c 3s infinite;
 }
 	 
 .bigbutton:focus {
@@ -218,12 +221,16 @@ errorbody {
   background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
 }
-/*
+
 @keyframes move_c {
-    0% {transform: translate(0px, 0)}
-    50% {transform: translate(0px, 0) rotateZ(5deg)}
+    0% {transform: translateY(0);
+    }
+    50% {transform: translateY(-20px);
+    }
+     100% {transform: translateY(0);
+    }
 }
-*/
+
 
 /*
 * �{�^���T�C�Y�����O
@@ -240,12 +247,12 @@ errorbody {
 	border-radius: 100vh;
 	color: #fff;
 	border: 2px solid #fff;
-	/*animation: move_b 2s infinite;*/
+	animation: move_c 3s infinite;
 }
 
-/*
+
 @keyframes move_b {
-    0% {transform: translate(4px, 0px);}
+	 0% {transform: translate(4px, 0px);}
     5% {transform: translate(-4px, 0px);}
     10% {transform: translate(4px, 0px);}
     15% {transform: translate(-4px, 0px);}
@@ -253,8 +260,7 @@ errorbody {
     25% {transform: translate(-4px, 0px);}
     30% {transform: translate(0px, 0px);}
 }
-*/
-
+  
 .lngbutton:hover {
   background: linear-gradient(-45deg, violet, indigo, blue, green, yellow, orange, red); /* ホバー時の背景色 */
   color: #cccccc; /* ホバー時のテキスト色 */
@@ -311,3 +317,21 @@ errorbody {
 .fontRed {
     color: red;
 }
+
+.src1{
+	width:250px;
+	height:175px;
+	background-image:url("./images/p.gif");
+	position: absolute; 
+	 bottom: 0;
+}
+
+.src2 {
+	 opacity: 0.5;
+	width:365px;
+	height:300px;
+	background-image:url("./images/2.jpg");
+	position: absolute; 
+	 bottom: 0;
+}
+ 
