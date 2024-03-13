@@ -30,7 +30,7 @@
 
     <title>‹Æ–±˜A—Šm”F‰æ–Ê</title>
 
-    <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/kikin/pages/css/gyoumu.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="wrapper">

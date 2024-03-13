@@ -24,7 +24,11 @@
 <bean:define id="color" value="" type="java.lang.String"/>
 <bean:define id="showLength" value="16" type="java.lang.String"/>
 <html>
-  <head>
+  <head> 
+  
+      <link href="/kikin/pages/css/shukkin.css" rel="stylesheet" type="text/css" />
+  
+  
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
@@ -49,9 +53,8 @@
     </script>
     <title>èoãŒäÛñ]ämîFâÊñ </title>
 
-    <link href="/kikin/pages/css/common.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body> 
     <div id="wrapper">
       <div id="header">
         <table>

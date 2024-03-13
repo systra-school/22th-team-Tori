@@ -1,13 +1,10 @@
-/*
-* body��`
-*/
 body {
 	margin-top: 0px;
 	padding-top: 0px;
 	
     overflow: hidden;
     justify-content: center;
-    background-image: url("./images/16.14.51.gif");
+    background-image: url("./images/yadon.jpg");
     background-size:100%;
 }
 html {

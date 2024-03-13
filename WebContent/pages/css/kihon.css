@@ -1,13 +1,10 @@
-/*
-* body��`
-*/
 body {
 	margin-top: 0px;
 	padding-top: 0px;
 	
     overflow: hidden;
     justify-content: center;
-    background-image: url("./images/16.14.51.gif");
+    background-image: url("./images/rohan.gif");
     background-size:100%;
 }
 html {
@@ -316,12 +313,4 @@ errorbody {
 */
 .fontRed {
     color: red;
-}
-
-.src1{
-	width:250px;
-	height:175px;
-	background-image:url("./images/p.gif");
-	position: absolute; 
-	 bottom: 0;
 }
