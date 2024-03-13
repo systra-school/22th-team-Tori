@@ -114,6 +114,8 @@ errorbody {
     margin: 0px;
     padding: 5px;
     background-color: #FFA4C6;
+    background-image: url("./images/RANDOM GHOST.gif");
+    background-size:100%;
 }
 
 /*
@@ -135,7 +137,7 @@ errorbody {
     height: 80%;
     overflow: auto;
     font-weight: bold;
-    color: black;
+    color: #ffffff;
 }
 
 /*
