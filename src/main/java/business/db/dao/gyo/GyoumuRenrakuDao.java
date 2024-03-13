@@ -41,12 +41,14 @@ public class GyoumuRenrakuDao extends AbstractDao {
     		strSql.append("SHAIN_NAME, ");
     		strSql.append("YEAR_MONTH_DAY, ");
     		strSql.append("TITLE, ");
-    		strSql.append("MEMO) VALUES (");
+    		strSql.append("MEMO, ");
+    		strSql.append("CREATE_DT) VALUES (");
     		strSql.append("?, ");
     		strSql.append("?, ");
     		strSql.append("?, ");
     		strSql.append("?, ");
-    		strSql.append("?)");
+    		strSql.append("?, ");
+    		strSql.append("current_timestamp())");
     		
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
 
@@ -87,7 +89,7 @@ public class GyoumuRenrakuDao extends AbstractDao {
     		strSql.append("MEMO ");
     		strSql.append("FROM ");
     		strSql.append("G_GYOUMU_RENRAKU ");
-    		strSql.append("ORDER BY YEAR_MONTH_DAY DESC");
+    		strSql.append("ORDER BY CREATE_DT DESC");
     		
             PreparedStatement ps = connection.prepareStatement(strSql.toString());
             // ログ出力

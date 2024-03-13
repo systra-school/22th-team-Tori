@@ -55,7 +55,7 @@
         		<table class="tblHeader" border="1"   cellpadding="0" cellspacing="0">
         		<tr>
                   <td width="110px" align="left">
-                  é–àıñº
+                  ìäçeé“
                   </td>
                   <td width="110px" align="left">
                   ìäçeì˙
