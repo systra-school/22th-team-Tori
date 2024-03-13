@@ -54,16 +54,16 @@
         	<div style="overflow-x: auto;overflow-y: hidden; width: 1088px;margin-left:100px">
         		<table class="tblHeader" border="1"   cellpadding="0" cellspacing="0">
         		<tr>
-                  <td width="110px" align="left">
+                  <td width="108px" align="left">
                   投稿者
                   </td>
-                  <td width="110px" align="left">
+                  <td width="108px" align="left">
                   投稿日
                   </td>
-                  <td width="200px" align="left">
+                  <td width="198px" align="left">
                   タイトル
                   </td>
-                  <td width="600px" align="left">
+                  <td width="590px" align="left">
                   内容
                   </td>
                 </tr>
