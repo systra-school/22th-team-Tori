@@ -68,7 +68,6 @@ public class GyoumuRenrakuDao extends AbstractDao {
             throw e;
     	}
     }
-    
     /**
      * 業務連絡DBのデータをListに格納する
      */
