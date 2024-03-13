@@ -17,7 +17,7 @@
       <tr>
           <td id="headLeft">
           <td id="headCenter">
-            エラー画面
+            非常事態発生
           </td>
           <td id="headRight">
             <input value="ログアウト" type="button" class="smlButton"  onclick="logout()" />
