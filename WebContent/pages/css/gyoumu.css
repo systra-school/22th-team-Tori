@@ -279,14 +279,14 @@ errorbody {
 .tblHeader {
     background-color: #98FB98;
     font-weight: bold;
-    background-image: linear-gradient(to right,white,purple,orange);
+    background-image: linear-gradient(to right,white,	#b123b1,orange);
 }
 
 /*
 * �e�[�u���{�f�B�̃X�^�C��
 */
 .tblBody {
-   background-image: linear-gradient(to right,white,purple,orange);
+   background-image: linear-gradient(to right,white,	#b123b1,orange);
 }
 /*
 * �����F ��
