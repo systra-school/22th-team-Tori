@@ -17,7 +17,8 @@ errorbody {
 }
 #wrapper {
     width:100%;
-    padding:0px;
+    margin: 20px;
+    padding: 0px;
 }
 /*
 * �w�b�_�[�A�t�b�^�[���ʒ�`
@@ -26,42 +27,35 @@ errorbody {
     width: 100%;
     margin: 0px;
     padding: 5px;
-  
 }
-
 /*
 * �w�b�_�[��`
 */
 #header {
-    top: 2px;
-    height: 40px;
+    top: 100px;
+    height: 80px;
     width:100%;
 }
 #headLeft {
     width:200px;
-    text-align:left;
+    text-align:right;
 }
 #headCenter {
     font-size: 30px;
     font-family: "Hiragino Sans","ヒラギノ角ゴシック"; font-weight: 900;
-    width:800px;
+    width:1080px;
     text-align:center;
     color: #fff;
     text-shadow: 2px 2px 10px #004080, -2px 2px 10px #004080, 2px -2px 10px #004080, -2px -2px 10px  #004080;;
-   
-  
   animation: gradientEffect 3s infinite alternate;
 }
-
 @keyframes gradientEffect {
   from {background-position: left}
   to {background-position: right}
 }
-
-
 #headRight {
     width:200px;
-    text-align:right;
+    text-align:left;
 }
 /*
 * ���j���[��ʂ̃{�^��
@@ -243,9 +237,9 @@ errorbody {
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	transition: transform 0.3s ease, box-shadow 0.5s ease;
 	transition: background-color 0.3s, color 0.3s;
-	background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+	background-image: linear-gradient(to right,  white 0%, lightblue,blue 100%);
 	border-radius: 100vh;
-	color: #fff;
+	color: black;
 	border: 2px solid #fff;
 	animation: move_c 3s infinite;
 }
@@ -288,14 +282,14 @@ errorbody {
 .tblHeader {
     background-color: #98FB98;
     font-weight: bold;
-    background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+    background-image: linear-gradient(to right,white,lightblue);
 }
 
 /*
 * �e�[�u���{�f�B�̃X�^�C��
 */
 .tblBody {
-   background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+   background-image: linear-gradient(to right,white,lightblue);
 }
 /*
 * �����F ��
