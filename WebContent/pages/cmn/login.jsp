@@ -11,6 +11,7 @@
  <meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="/kikin/pages/js/common.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/checkCommon.js"></script>
     <script type="text/javascript" src="/kikin/pages/js/message.js"></script>
