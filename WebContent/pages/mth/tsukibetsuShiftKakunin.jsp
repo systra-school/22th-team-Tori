@@ -99,7 +99,7 @@ if (listSize > intShowLength) {
       <!--障害表033　2024/02/29　古川　修正-->
       <div id="gymBody" style="overflow-x: auto;overflow-y: hidden;">             
         <html:form action="/shukkinKibouKakuninInit" >
-          <div style="margin-left:50px;">
+          <div style="margin-left:100px;">
             <div style="height: 25px;">
               表示年月：
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftKakuninForm" property="yearMonth" type="String"/>

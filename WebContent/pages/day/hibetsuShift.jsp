@@ -90,7 +90,7 @@
         </table>
       </div>
       <div id="gymBody" style="overflow: hidden;">
-        <div style="margin-left:80px;">
+        <div style="margin-left:100px;">
           <html:form>
             <div style="height: 20px">
               ï\é¶îNåéÅF

@@ -73,7 +73,7 @@
       </div>
       <!--障害表012　2024/02/28　古川　修正-->
        <div id="gymBody" style="overflow-x: auto;overflow-y:hidden;">
-        <div style="margin-left:10px;"> 
+        <div style="margin-left:100px;"> 
             
           <html:form action="/shukkinKibouKakuninInit" >
             表示年月：

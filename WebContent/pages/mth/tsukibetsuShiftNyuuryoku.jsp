@@ -119,7 +119,7 @@ if (listSize > intShowLength) {
       </div>
       <div id="gymBody" style="overflow: hidden;">
         <html:form action="/tsukibetsuShiftNyuuryokuInit" >
-          <div style="margin-left:50px;">
+          <div style="margin-left:100px;">
             <div style="height: 25px;">
               ï\é¶îNåéÅF
               <bean:define id="sessionYearMonth" name="tsukibetsuShiftNyuuryokuForm" property="yearMonth" type="String"/>

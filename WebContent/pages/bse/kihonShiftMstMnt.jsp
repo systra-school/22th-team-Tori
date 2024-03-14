@@ -61,7 +61,7 @@
       <div id="gymBody">
         <html:form action="/kihonShiftRegist" >
           <%-- –}—á --%>
-          <div id="hanrei" style="width:476px; margin-left:80px; float:left">
+          <div id="hanrei" style="width:476px; margin-left:100px; float:left">
             <div>
               <table class="tblHeader" border="1" cellpadding="0" cellspacing="0">
                 <tr>
