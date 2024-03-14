@@ -61,6 +61,9 @@
             <html:form action="/hibetsuShiftInit">
               <input type="submit" value="日別シフト確認" class="bigButton" />
             </html:form>
+            <html:form action="/keihiKanriInit">
+              <input type="submit" value="経費精算確認" class="bigButton" />
+            </html:form>
           </div>
 
           <div class="menuBlock">
@@ -116,6 +119,9 @@
           <div class="menuBlock">
             <html:form action="/kinmuJissekiNyuryokuKakuninInit">
               <input type="submit" value="勤務実績入力" class="bigButton" />
+            </html:form>
+            <html:form action="/keihiInit">
+              <input type="submit" value="経費精算確認" class="bigButton" />
             </html:form>
           </div>
 

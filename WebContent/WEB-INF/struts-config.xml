@@ -40,6 +40,11 @@
       <!-- 以下追加機能 -->
       <!-- 業務連絡フォーム -->
       <form-bean name="gyoumuRenrakuNyuuryokuKakuninForm" type="form.gyo.GyoumuRenrakuNyuuryokuKakuninForm" />
+      <!-- 経費フォーム -->
+
+      <form-bean name="keihiForm" type="form.kei.KeihiForm"/>
+      <!-- 社員マスタメンテナンス登録画面フォーム -->
+      <form-bean name="keihiRegistForm" type="form.kei.KeihiRegistForm"/>
     </form-beans>
 
     <global-exceptions>
@@ -577,6 +582,84 @@
         scope="session">
         <forward name="success" path="/pages/gyo/gyoumuRenrakuNyuuryoku.jsp"/>
       </action>
+       <!-- keihi 初期表示 -->
+      <action
+        path="/keihiInit"
+        type="action.kei.KeihiInitAction"
+        name="keihiForm"
+        input="/pages/kei/keihi.jsp"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/pages/kei/keihi.jsp"/>
+        <forward name="nodata" path="/pages/kei/keihiRegist.jsp"/>
+      </action>
+      <!-- keihi 更新 -->
+      <action
+        path="/keihiUpdate"
+        type="action.kei.KeihiUpdateAction"
+        name="keihiForm"
+        input="/pages/kei/keihi.jsp"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/keihiInit.do"/>
+        <forward name="nodata" path="/pages/kei/keihiRegist.jsp"/>
+      </action>
+      <!-- keihi 戻る -->
+      <action
+        path="/keihiBack"
+        type="action.kei.KeihiBackAction"
+        name="keihiRegistForm"
+        scope="session">
+        <forward name="success" path="/menu.do"/>
+      </action>
+      <!-- keihi 登録初期表示 -->
+      <action
+        path="/keihiRegistInit"
+        type="action.kei.KeihiRegistInitAction"
+        name="keihiForm"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/pages/kei/keihiRegist.jsp"/>
+      </action>
+      <!-- keihi 登録 -->
+      <action
+        path="/keihiRegist"
+        type="action.kei.KeihiRegistAction"
+        name="keihiRegistForm"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/keihiInit.do"/>
+      </action>
+      <!-- keihi 戻る -->
+      <action
+        path="/keihiRegistBack"
+        type="action.kei.KeihiRegistBackAction"
+        name="keihiRegistForm"
+        scope="session">
+        <forward name="success" path="/keihiInit.do"/>
+      </action>
+      
+      <action
+        path="/keihiKanriInit"
+        type="action.kei.KeihiKanriAction"
+        name="keihiForm"
+        input="/pages/kei/keihiKanri.jsp"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/pages/kei/keihiKanri.jsp"/>
+      </action>
+      
+       <action
+        path="/keihiTorisage"
+        type="action.kei.KeihiTorisageAction"
+        name="keihiForm"
+        input="/pages/kei/keihiKanri.jsp"
+        scope="session"
+        validate="true">
+        <forward name="success" path="/keihiKanri.do"/>
+        <forward name="nodata" path="/pages/kei/keihiKanri.jsp"/>
+      </action>
+      
     </action-mappings>
 	
     <controller bufferSize="4096" maxFileSize="256M" tempDir="/pages/sample"/>

@@ -283,4 +283,58 @@ public class DbConstant {
     		return name;
     	}
     }
+    
+    public enum Keihi {
+
+        TABLE_NAME("KEIHI"),
+        PREFIX("SH"),
+        SHAIN_ID("SHAIN_ID"),
+        USEDAY("USEDAY"),
+        USED("USED"),
+        MOKUTEKI("MOKUTEKI"),
+        COST("COST"),
+        CREATE_SHAIN_ID("CREATE_SHAIN_ID"),
+        CREATE_DT("CREATE_DT"),
+        UPDATE_SHAIN_ID("UPDATE_SHAIN_ID"),
+        UPDATE_DT("UPDATE_DT");
+
+        // 名称
+        private String name;
+
+        // コンストラクタ
+        private Keihi(String name) {
+            this.name = name;
+        }
+        
+        public String getName() {
+            return name;
+        }
+    }
+    public enum Keihi2 {
+
+        TABLE_NAME("KEIHI2"),
+        PREFIX("SH2"),
+        SHAIN_ID("SHAIN_ID"),
+        USEDAY("USEDAY"),
+        USED("USED"),
+        MOKUTEKI("MOKUTEKI"),
+        COST("COST"),
+        CREATE_SHAIN_ID("CREATE_SHAIN_ID"),
+        CREATE_DT("CREATE_DT"),
+        UPDATE_SHAIN_ID("UPDATE_SHAIN_ID"),
+        UPDATE_DT("UPDATE_DT");
+
+        // 名称
+        private String name;
+
+        // コンストラクタ
+        private Keihi2(String name) {
+            this.name = name;
+        }
+        
+        public String getName() {
+            return name;
+        }
+    }
+    
 }
